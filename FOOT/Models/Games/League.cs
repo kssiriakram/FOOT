@@ -1,4 +1,6 @@
-﻿namespace FOOT.Models.Games
+﻿using FOOT.Models.Standings;
+
+namespace FOOT.Models.Games
 {
     public class League
     {
@@ -9,7 +11,7 @@
         private string country_flag { get; set; }
         private int season_year { get; set; }
         private string round { get; set; }
-
+        private Dictionary<string,Standing> standings { get; set; }
 
 
     }
