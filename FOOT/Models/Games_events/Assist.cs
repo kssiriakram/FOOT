@@ -3,8 +3,8 @@ namespace FOOT.Models.Games_events
 {
     public class Assist
     {
-        private int id { get; set; }
-        private Player player {get; set; }
+        public int id { get; set; }
+        public Player player {get; set; }
 
     }
 }

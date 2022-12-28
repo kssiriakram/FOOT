@@ -2,7 +2,7 @@
 {
     public class Time
     {
-        private int elapsed {get; set; }
-        private int extra {get; set; }
+        public int elapsed {get; set; }
+        public int extra {get; set; }
     }
 }

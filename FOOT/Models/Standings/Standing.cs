@@ -2,17 +2,17 @@
 {
     public class Standing
     {
-        private int rank { get; set; }
-        private int points { get; set; }
-        private int goalsDiff { get; set; }
-        private string group { get; set; }
-        private string form { get; set; }
-        private string status { get; set; }
-        private string description { get; set; }
-        private DateTime update { get; set; }
-        private Total_standing all { get; set; }
-        private Total_standing home { get; set; }
-        private Total_standing away { get; set; }
+        public int rank { get; set; }
+        public int points { get; set; }
+        public int goalsDiff { get; set; }
+        public string group { get; set; }
+        public string form { get; set; }
+        public string status { get; set; }
+        public string description { get; set; }
+        public DateTime update { get; set; }
+        public Total_standing all { get; set; }
+        public Total_standing home { get; set; }
+        public Total_standing away { get; set; }
 
     }
 }

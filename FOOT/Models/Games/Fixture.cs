@@ -2,13 +2,13 @@
 {
     public class Fixture
     {
-        private int id { get; set; }
-        private string refreee { get; set; }
-        private string timezone { get; set; }
-        private DateTime date { get; set; }
-        private Period period { get; set; }
-        private Venue venue  { get; set; }
-        private Status status { get; set; }
+        public int id { get; set; }
+        public string refreee { get; set; }
+        public string timezone { get; set; }
+        public DateTime date { get; set; }
+        public Period period { get; set; }
+        public Venue venue  { get; set; }
+        public Status status { get; set; }
 
     }
 }

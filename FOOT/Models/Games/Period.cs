@@ -2,7 +2,7 @@
 {
     public class Period
     {
-        private int first { get; set; }
-        private int last { get; set; }
+        public int first { get; set; }
+        public int last { get; set; }
     }
 }

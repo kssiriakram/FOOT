@@ -2,10 +2,10 @@
 {
     public class Game
     {
-        private Fixture fixture { get; set; }
-        private League league {get; set; }
-        private Teams teams {get; set; }
-        private Goals goals {get; set; }
-        private Score score {get; set; }
+        public Fixture fixture { get; set; }
+        public League league {get; set; }
+        public Teams teams {get; set; }
+        public Goals goals {get; set; }
+        public Score score {get; set; }
     }
 }

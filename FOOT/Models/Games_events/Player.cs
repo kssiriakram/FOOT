@@ -2,8 +2,8 @@
 {
     public class Player
     {
-        private int id { get; set; }
-        private string name { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
         public string photo_url { get; set; }
     }
 }

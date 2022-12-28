@@ -2,8 +2,8 @@
 {
     public class Country
     {
-        private string name { get; set; }
-        private string countryCode { get; set; }
+        public string name { get; set; }
+        public string countryCode { get; set; }
         public string flag_url { get; set; }
 
     }
