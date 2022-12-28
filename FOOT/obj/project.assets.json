@@ -5797,29 +5797,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kssiriakram\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\7\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# projects\\FOOT\\FOOT\\FOOT.csproj",
+      "projectUniqueName": "C:\\Computer Science\\GINF3\\Developpement web ASP.NET\\Projet foot\\CODE\\V1\\FOOT\\FOOT\\FOOT.csproj",
       "projectName": "FOOT",
-      "projectPath": "D:\\C# projects\\FOOT\\FOOT\\FOOT.csproj",
-      "packagesPath": "C:\\Users\\kssiriakram\\.nuget\\packages\\",
-      "outputPath": "D:\\C# projects\\FOOT\\FOOT\\obj\\",
+      "projectPath": "C:\\Computer Science\\GINF3\\Developpement web ASP.NET\\Projet foot\\CODE\\V1\\FOOT\\FOOT\\FOOT.csproj",
+      "packagesPath": "C:\\Users\\7\\.nuget\\packages\\",
+      "outputPath": "C:\\Computer Science\\GINF3\\Developpement web ASP.NET\\Projet foot\\CODE\\V1\\FOOT\\FOOT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kssiriakram\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5862,7 +5865,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
