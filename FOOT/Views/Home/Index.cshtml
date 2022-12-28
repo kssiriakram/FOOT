@@ -1,8 +1,41 @@
-﻿@{
+﻿@model IEnumerable<FOOT.Models.Games.Game>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.league.league_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.away_team.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.home_team.name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.league.league_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.teams.away_team.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.teams.home_team.name)
+                </td>
+               
+                
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,109 @@
+﻿@model IEnumerable<FOOT.Models.Games.Game>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Index</h1>
+<label> league</label>
+<select class="select" id="select">
+    @foreach (var item in ViewBag.league_list)
+    {
+            <option id=@item.league_name>@item.league_name</option>
+    }
+</select>
+<h2>On going matches</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.league.league_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.away_team.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.home_team.name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.on_going_games)
+        {
+                <tr>
+                    <td>
+                     @item.league.league_name
+                    </td>
+                    <td>
+                    @item.teams.away_team.name
+                    </td>
+                    <td>
+                    @item.teams.home_team.name
+                    </td>
+
+
+                </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Other matches</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.league.league_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.away_team.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teams.home_team.name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.other_games)
+        {
+                    <tr>
+                        <td>
+                    @item.league.league_name
+                        </td>
+                        <td>
+                    @item.teams.away_team.name
+                        </td>
+                        <td>
+                    @item.teams.home_team.name
+                        </td>
+
+
+                    </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    const select = document.getElementById("select")
+    select.addEventListener('change',(e)=>{
+        var rowTable=document.querySelectorAll("tbody tr td:nth-of-type(1)");
+
+        rowTable.forEach(ele=>{
+
+            if(ele.textContent.includes(e.target.value)){
+                console.log(ele.textContent);
+                ele.parentElement.style.display="";
+                ele.parentElement.style.transition="all 0.3s ease-in-out";
+
+            }else{
+                ele.parentElement.style.display="none";
+
+            }
+        })
+    })
+    var league = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.league_list))')
+    var name = league.map(e => e.name)
+
+    console.log(name)
+</script>

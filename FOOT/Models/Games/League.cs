@@ -26,7 +26,7 @@ namespace FOOT.Models.Games
         public static List<League> GetLeagues()
         {
             List<League> leagues = new List<League>();
-            string json = File.ReadAllText("../../../Games.json");
+            string json = File.ReadAllText(@"D:\\C# projects\\FOOT\\FOOT\\Repo\\Games.json");
             JObject result = JObject.Parse(json);
             for (int i = 0; i < result["response"].Count(); i++)
             {
