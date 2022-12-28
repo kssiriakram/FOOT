@@ -1,0 +1,156 @@
+﻿{
+  "get": "fixtures/statistics",
+  "parameters": {
+    "fixture": "37899"
+  },
+  "errors": [],
+  "results": 2,
+  "response": [
+    {
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media.api-sports.io/teams/85.png"
+      },
+      "statistics": [
+        {
+          "type": "Shots on Goal",
+          "value": 5
+        },
+        {
+          "type": "Shots off Goal",
+          "value": 7
+        },
+        {
+          "type": "Total Shots",
+          "value": 17
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 5
+        },
+        {
+          "type": "Shots insidebox",
+          "value": 12
+        },
+        {
+          "type": "Shots outsidebox",
+          "value": 5
+        },
+        {
+          "type": "Fouls",
+          "value": 15
+        },
+        {
+          "type": "Corner Kicks",
+          "value": 9
+        },
+        {
+          "type": "Offsides",
+          "value": 2
+        },
+        {
+          "type": "Ball Possession",
+          "value": "61%"
+        },
+        {
+          "type": "Yellow Cards",
+          "value": 2
+        },
+        {
+          "type": "Red Cards",
+          "value": null
+        },
+        {
+          "type": "Goalkeeper Saves",
+          "value": 1
+        },
+        {
+          "type": "Total passes",
+          "value": 633
+        },
+        {
+          "type": "Passes accurate",
+          "value": 575
+        },
+        {
+          "type": "Passes %",
+          "value": "91%"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 84,
+        "name": "Nice",
+        "logo": "https://media.api-sports.io/teams/84.png"
+      },
+      "statistics": [
+        {
+          "type": "Shots on Goal",
+          "value": 2
+        },
+        {
+          "type": "Shots off Goal",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 8
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 2
+        },
+        {
+          "type": "Shots insidebox",
+          "value": 5
+        },
+        {
+          "type": "Shots outsidebox",
+          "value": 3
+        },
+        {
+          "type": "Fouls",
+          "value": 14
+        },
+        {
+          "type": "Corner Kicks",
+          "value": 1
+        },
+        {
+          "type": "Offsides",
+          "value": 2
+        },
+        {
+          "type": "Ball Possession",
+          "value": "39%"
+        },
+        {
+          "type": "Yellow Cards",
+          "value": 3
+        },
+        {
+          "type": "Red Cards",
+          "value": null
+        },
+        {
+          "type": "Goalkeeper Saves",
+          "value": 4
+        },
+        {
+          "type": "Total passes",
+          "value": 414
+        },
+        {
+          "type": "Passes accurate",
+          "value": 365
+        },
+        {
+          "type": "Passes %",
+          "value": "88%"
+        }
+      ]
+    }
+  ]
+}

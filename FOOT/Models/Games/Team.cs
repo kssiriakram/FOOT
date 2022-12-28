@@ -5,10 +5,13 @@ namespace FOOT.Models.Games
 {
     public class Team
     {
-        public int id { get; set; }
+        [JsonProperty("id")]
+        public string id { get; set; }
+        [JsonProperty("name")]
         public string name { get; set; }
+        [JsonProperty("logo")]
         public string url_logo { get; set; }
-        public DateTime team_stats_update { get; set; }
+     
     }
 
     

@@ -11,7 +11,7 @@ namespace FOOT.Models.Games
         public Dictionary<string,string> extratime { get; set; }
         public Dictionary<string,string> penalty { get; set; }
 
-        List<Score> GetScores()
+        public static List<Score> GetScores()
         {
             List<Score> scores = new List<Score>();
             string json = File.ReadAllText("../../../Repo/Games.json");
@@ -24,9 +24,6 @@ namespace FOOT.Models.Games
             return scores;
         }
 
-        Score GetScore(JObject result)
-        { 
-               return  JsonConvert.DeserializeObject<Score>(Convert.ToString(result["score"]));     
-        }
+        
     }
 }

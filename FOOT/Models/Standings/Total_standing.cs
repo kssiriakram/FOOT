@@ -1,12 +1,18 @@
-﻿namespace FOOT.Models.Standings
+﻿using Newtonsoft.Json;
+
+namespace FOOT.Models.Standings
 {
     public class Total_standing
     {
-        public int played { get; set; }
-        public int win { get; set; }
-        public int draw { get; set; }
-        public int lose { get; set; } 
-        public int goal_for { get; set; }
-        public int goal_against { get; set; }
+        [JsonProperty("played")]
+        public string played { get; set; }
+        [JsonProperty("win")]
+        public string win { get; set; }
+        [JsonProperty("draw")]
+        public string draw { get; set; }
+        [JsonProperty("lose")]
+        public string lose { get; set; }
+        [JsonProperty("goals")]
+        public Dictionary<string, string> goals { get; set; } 
     }
 }

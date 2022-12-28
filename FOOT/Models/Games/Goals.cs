@@ -5,11 +5,13 @@ namespace FOOT.Models.Games
 {
     public class Goals
     {
-        public int home_goals { get; set; }
-        public int away_goals { get; set; }
+        [JsonProperty("home")]
+        public string home_goals { get; set; }
+        [JsonProperty("away")]
+        public string away_goals { get; set; }
 
 
-        List<Goals> GetGoals()
+        public static List<Goals> GetGoals()
         {
             List<Goals> goals = new List<Goals>();
             string json = File.ReadAllText("../../../Repo/Games.json");
@@ -22,9 +24,5 @@ namespace FOOT.Models.Games
             return goals;
         }
 
-        Goals GetGoal(JObject result)
-        {
-            return JsonConvert.DeserializeObject<Goals>(Convert.ToString(result["goals"]));
-        }
     }
 }

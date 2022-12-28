@@ -6,16 +6,24 @@ namespace FOOT.Models.Games
 {
     public class League
     {
-        public int id { get; set; }
+        [JsonProperty("id")]
+        public string id { get; set; }
+        [JsonProperty("name")]
         public string league_name { get; set; }
+        [JsonProperty("country")]
         public string region { get; set; }
+        [JsonProperty("logo")]
         public string logo_url {get; set; }
+        [JsonProperty("flag")]
         public string country_flag { get; set; }
-        public int season_year { get; set; }
+        [JsonProperty("season")]
+        public string season_year { get; set; }
+        [JsonProperty("round")]
         public string round { get; set; }
-        public Dictionary<string,Standing> standings { get; set; }
+        [JsonProperty("standings")]
+        public List<List<Standing>> standings { get; set; }
 
-        public List<League> GetLeagues()
+        public static List<League> GetLeagues()
         {
             List<League> leagues = new List<League>();
             string json = File.ReadAllText("../../../Games.json");
@@ -29,9 +37,14 @@ namespace FOOT.Models.Games
             return leagues;
         }
 
-        public League GetLeague(JObject result)
+        public static League GetLeagueStandings()
         {
-            League league = JsonConvert.DeserializeObject<League>(Convert.ToString(result["league"]));
+         
+            string json = File.ReadAllText("../../../Standing.json");
+            JObject result = JObject.Parse(json);
+            
+                League league = JsonConvert.DeserializeObject<League>(Convert.ToString(result["response"][0]["league"]));
+
             return league;
         }
     }

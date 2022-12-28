@@ -5,28 +5,27 @@ namespace FOOT.Models.Games
 {
     public class Status
     {
+        [JsonProperty("long")]
         public string status { get; set; }
+        [JsonProperty("short")]
         public string status_abv { get; set; }
-        public int time_elapsed { get; set; }
+        [JsonProperty("elapsed")]
+        public string time_elapsed { get; set; }
 
-        public List<Status> GetLeagues()
+        public static List<Status> GetStatus()
         {
-            List<Status> stauts = new List<Status>();
+            List<Status> status = new List<Status>();
             string json = File.ReadAllText("../../../Games.json");
             JObject result = JObject.Parse(json);
             for (int i = 0; i < result["response"].Count(); i++)
             {
-                League league = JsonConvert.DeserializeObject<League>(Convert.ToString(result["response"][i]["league"]));
+                Status statut = JsonConvert.DeserializeObject<Status>(Convert.ToString(result["response"][i]["fixture"]["status"]));
 
-                leagues.Add(league);
+                status.Add(statut);
             }
-            return leagues;
+            return status;
         }
 
-        public League GetLeague(JObject result)
-        {
-            League league = JsonConvert.DeserializeObject<League>(Convert.ToString(result["league"]));
-            return league;
-        }
+      
     }
 }
