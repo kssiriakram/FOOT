@@ -5793,7 +5793,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Nancy >= 2.0.0"
+      "Nancy >= 2.0.0",
+      "Newtonsoft.Json >= 9.0.1"
     ]
   },
   "packageFolders": {
@@ -5841,6 +5842,10 @@
           "Nancy": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[9.0.1, )"
           }
         },
         "imports": [

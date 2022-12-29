@@ -11,6 +11,9 @@ namespace FOOT.Models.Games_stats
         [JsonProperty("statistics")]
         public Dictionary<string, string> stats {get; set; }
 
+
+        // Get  fixture ( passed in parameter in controller ) teams stats 
+        // To be seen : working with restApi and how to pass fixture id
         public static List<Team_stats> GetFixture_stats()
         {
             List<Team_stats> Teams_stats = new List<Team_stats>();

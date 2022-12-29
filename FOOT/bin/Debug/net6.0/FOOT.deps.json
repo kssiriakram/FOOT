@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "FOOT/1.0.0": {
         "dependencies": {
-          "Nancy": "2.0.0"
+          "Nancy": "2.0.0",
+          "Newtonsoft.Json": "9.0.1"
         },
         "runtime": {
           "FOOT.dll": {}
