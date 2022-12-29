@@ -23,7 +23,7 @@ namespace FOOT.Models.Games
         public static List<Fixture> GetFixtures()
         {
             List<Fixture> fixtures = new List<Fixture>();
-            string json = File.ReadAllText("../../../Games.json");
+            string json = File.ReadAllText("../../../Repo/Games.json");
             JObject result = JObject.Parse(json);
             for (int i = 0; i < result["response"].Count(); i++)
             {

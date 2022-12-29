@@ -19,7 +19,7 @@ namespace FOOT.Models.Games
         public static List<Game> GetGames()
         {
             List<Game> games = new List<Game>();
-            string json = File.ReadAllText("../../../Games.json");
+            string json = File.ReadAllText(@"D:\\C# projects\\FOOT\\FOOT\\Repo\\Games.json");
             JObject result = JObject.Parse(json);
             for (int i = 0; i < result["response"].Count(); i++)
             {
